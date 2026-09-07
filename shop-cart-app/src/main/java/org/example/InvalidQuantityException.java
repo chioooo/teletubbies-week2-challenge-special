@@ -5,4 +5,8 @@ package org.example;
  * {@link Product}.
  */
 public class InvalidQuantityException extends RuntimeException {
+
+    public InvalidQuantityException(int quantity) {
+        super("Quantity must be greater than zero, but got: " + quantity);
+    }
 }
